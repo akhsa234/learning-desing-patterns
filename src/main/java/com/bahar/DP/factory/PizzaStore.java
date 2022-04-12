@@ -1,11 +1,7 @@
 package com.bahar.DP.factory;
 
 public abstract class PizzaStore {
-    SimplePizzaFactory factory;
 
-    public PizzaStore(SimplePizzaFactory factory) {
-        this.factory = factory;
-    }
 
     public Pizza orderPizza(String type) {
         Pizza pizza;

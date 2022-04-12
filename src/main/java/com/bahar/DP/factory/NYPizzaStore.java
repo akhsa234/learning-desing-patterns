@@ -3,11 +3,6 @@ package com.bahar.DP.factory;
 public class NYPizzaStore extends PizzaStore{
 
 
-    public NYPizzaStore(SimplePizzaFactory factory) {
-        super(factory);
-    }
-
-
 
     @Override
     protected Pizza createPizza(String item) {
