@@ -1,9 +1,16 @@
 package com.bahar.DP.factory;
 
-public class NYPizzaStore extends PizaStore{
+public class NYPizzaStore extends PizzaStore{
+
+
+    public NYPizzaStore(SimplePizzaFactory factory) {
+        super(factory);
+    }
+
+
 
     @Override
-    Pizza createPizza(String item) {
+    protected Pizza createPizza(String item) {
         if (item.equals("cheese")) {
             return new NYStyleCheesePizza();
 

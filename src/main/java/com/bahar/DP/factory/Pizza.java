@@ -3,7 +3,7 @@ package com.bahar.DP.factory;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Pizza {
+public abstract class Pizza {
 
     String name;
     String dough;
@@ -13,8 +13,8 @@ public class Pizza {
     void prepare(){
 
         System.out.println("preaparing "+ name);
-        System.out.println("tossing dough ... "+ dough);
-        System.out.println("adding souce "+ sauce);
+        System.out.println("tossing dough ... ");
+        System.out.println("adding souce ");
         System.out.println("adding toppings : ");
 
         for ( int i=0; i<toppings.size(); i++) {
@@ -38,13 +38,7 @@ public class Pizza {
         return name;
     }
 
-    public String getDough() {
-        return dough;
+    public void setName(String name) {
+        this.name = name;
     }
-    public String getSauce() {
-        return sauce;
-    }
-
-
-
 }
